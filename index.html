@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="top-header">
+    <h1>City Furniture</h1>
+
+    <input type="text" placeholder="Search for furniture & appliances">
+</div>
+    <!-- MENU -->
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+   
+
+
+    <!-- HOME -->
+     <div class="category-wrapper">
+  <div class="category">
+    <div class="icon red">Top<br>100<br>deals</div>
+    <p>Our top 100 deals</p>
+  </div>
+
+  <div class="category">
+    <div class="icon yellow">Clearance</div>
+    <p>Clearance</p>
+  </div>
+
+  <div class="category">
+    <img src="images/wash.jpg" alt="">
+    <p>Keeping warm</p>
+  </div>
+
+  <div class="category">
+    <img src="sofa.png" alt="">
+    <p>Home & furniture</p>
+  </div>
+
+  <div class="category">
+    <img src="tv.png" alt="">
+    <p>Technology</p>
+  </div>
+
+  <div class="category">
+    <img src="controller.png" alt="">
+    <p>Gaming</p>
+  </div>
+
+  <div class="category">
+    <img src="teddy.png" alt="">
+    <p>Toys</p>
+  </div>
+
+  <div class="category">
+    <img src="kettle.png" alt="">
+    <p>Appliances & floorcare</p>
+  </div>
+</div>
+
+    <div class="section" id="home">
+        <h2>Welcome to City Furniture</h2>
+       <p>
+        We provide quality home appliances and furniture at best prices.<br>
+        <strong>நாங்கள் உயர்தர வீட்டு உபயோகப் பொருட்கள் மற்றும் மரச்சாமான்களை சிறந்த விலையில் வழங்குகிறோம்.</strong>
+        </p>
+
+
+    </div>
+    
+    <div class="slider">
+      <img src="images/front.jpg" class="slide">
+      <img src="images/washslide.jpeg" class="slide">
+      <img src="images/slide3.jpg" class="slide">
+        <img src="images/mixi_display.png" class="slide">
+    </div> 
+
+    <!-- PRODUCTS -->
+    <div class="section" id="products">
+    <h2>Our Products</h2>
+
+    <div class="section">
+    <h2>Popular Products</h2>
+
+    <div class="products">
+        <div class="product">
+            <a href="bed.html">
+                <img src="images/bed.jpg">
+                <h3>Wooden Bed</h3>
+                <p class="price">₹25,999</p>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="images/sofa.jpg">
+            <h3>Sofa Set</h3>
+            <p class="price">₹32,499</p>
+        </div>
+
+        <div class="product">
+            <img src="images/kettle.png">
+            <h3>Refrigerator</h3>
+            <p class="price">₹18,999</p>
+        </div>
+
+        <div class="product">
+            <img src="images/wash.jpg">
+            <h3>Washing Machine</h3>
+            <p class="price">₹21,999</p>
+        </div>
+    </div>
+</div>
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>
+            City Furniture is a trusted shop offering modern furniture and home appliances
+            with excellent customer service.
+        </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Address: Main Road, Your City</p>
+        <p>📞 Phone: 9876543210</p>
+        <p>📧 Email: cityfurniture@gmail.com</p>
+
+        <!-- GOOGLE MAP -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.837226360765!2d78.44270967479558!3d9.169152090897873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0165392642c971%3A0xeda9c2146941aa52!2sCity%20furniture!5e0!3m2!1sen!2suk!4v1768689466743!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>© 2026 City Furniture</p>
+    </div>
+    <a href="https://wa.me/447909394" class="whatsapp" target="_blank">
+    💬
+</a>
+<script>
+    let slides = document.getElementsByClassName("slide");
+    let index = 0;
+
+    function showSlide() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[index].style.display = "block";
+        index++;
+        if (index >= slides.length) {
+            index = 0;
+        }
+    }
+
+    showSlide();
+    setInterval(showSlide, 3000);
+</script>
+
+
+
+</body>
+</html>
