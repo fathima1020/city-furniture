@@ -127,6 +127,47 @@ a {
 }
 
 
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* CATEGORY WRAPPER WITH MARGIN */
+.category-wrapper {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  margin: 20px;          /* ✅ margin added here */
+}
+
+/* Hide scrollbar */
+.category-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.category-wrapper {
+  scrollbar-width: none;
+}
+
+.category {
+  min-width: 150px;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.arrow {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 /* ===== PRODUCTS ===== */
 .products {
     display: flex;
