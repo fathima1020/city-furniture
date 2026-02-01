@@ -178,7 +178,7 @@ a {
 
 /* Card */
 .card {
-  background-color: #ffffff;
+  background-color: #70f6d7;
   border-radius: 12px;
   padding: 8px;
 }
@@ -195,7 +195,7 @@ a {
 
 .label {
   font-size: 13px;
-  color: #555;
+  color: #555555;
   margin-top: 6px;
 }
 
@@ -390,4 +390,11 @@ a {
     .top-header input {
         width: 100%;
     }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card img {
+    height: 120px;
+  }
 }
